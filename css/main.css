@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'rm_neue_bold';
+  src: url('../fonts/rmneue-bold-webfont.woff2') format('woff2'),
+    url('../fonts/rmneue-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'rm_neue_light';
+  src: url('../fonts/rmneue-light-webfont.woff2') format('woff2'),
+    url('../fonts/rmneue-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'rm_neue_regular';
+  src: url('../fonts/rmneue-regular-webfont.woff2') format('woff2'),
+    url('../fonts/rmneue-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #fdc760;
+  margin: 5rem 10rem 2.5rem 10rem;
+  font-family: 'rm_neue_regular', Arial, Helvetica, sans-serif;
+}
+
+header,
+main,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0 0 0.25rem 0;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-family: 'rm_neue_light', Arial, Helvetica, sans-serif;
+  font-size: 2.25rem;
+}
+
+h3,
+h4 {
+  font-family: 'rm_neue_bold', Arial, Helvetica, sans-serif;
+  font-size: 2.25rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: 'rm_neue_light', Arial, Helvetica, sans-serif;
+}
+
+#scores {
+  display: flex;
+  justify-content: space-between;
+}
+
+.score {
+  display: flex;
+  align-items: last baseline;
+  gap: 16px;
+}
+
+.options {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 25%;
+  height: auto;
+}
+
+.option:hover {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+#move-history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+
+#move-history > h2 {
+  margin: 2rem 0 2rem 0;
+}
+
+#history,
+#history-titles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  gap: 10rem;
+  margin: 0;
+}
+
+#history > div > h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+button {
+  font-family: 'rm_neue_bold', Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: white;
+}

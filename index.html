@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <title>RPS</title>
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Rock Paper Scissors</h1>
+  </header>
+  <main>
+    <section id="scores">
+      <article class="score player">
+        <h2>You:</h2>
+        <h2 id="player-score">0</h2>
+      </article>
+
+      <article class="score computer">
+        <h2>Computer:</h2>
+        <h2 id="computer-score">0</h2>
+      </article>
+    </section>
+
+    <h3 id="instruction">Choose an option to begin!</h3>
+
+    <section class="options">
+      <article class="option rock" id="rock">
+        <img src="./images/rock.png" alt="rock">
+        <p>Rock</p>
+      </article>
+
+      <article class="option paper" id="paper">
+        <img src="./images/paper.png" alt="paper">
+        <p>Paper</p>
+      </article>
+
+      <article class="option scissors" id="scissors">
+        <img src="./images/scissors.png" alt="scissors">
+        <p>Scissors</p>
+      </article>
+    </section>
+
+    <section id="move-history">
+      <h2>Move History</h2>
+      <article id="history-titles">
+        <h4>Player</h4>
+        <h4>Computer</h4>
+      </article>
+      <article id="history">
+        <div id="player-history"></div>
+        <div id="computer-history"></div>
+      </article>
+    </section>
+  </main>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
